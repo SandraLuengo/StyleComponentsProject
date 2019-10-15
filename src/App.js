@@ -1,14 +1,37 @@
-import React from 'react';
-import Container from './components/Container/Container'
-import './App.css';
+import React, {Component} from "react";
+import { connect } from "react-redux";
+import { simpleAction } from "./redux/actions/simpleAction";
+import Header from "./components/Header/Header.styled";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-     Style Components Project
-     <Container/>
-    </div>
-  );
+const mapStateToProps = state => ({
+  ...state
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  simpleAction: () => dispatch(simpleAction())
+});
+
+class App extends Component {
+
+  simpleAction = () => {
+    this.props.simpleAction();
+  };
+
+  render() {
+
+    return (
+      <div className="App">
+        Style Components Project
+        <Header color="red" />
+        <button onClick={() => this.simpleAction()}>Test redux action</button>
+        <pre>{JSON.stringify(this.props)}</pre>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
