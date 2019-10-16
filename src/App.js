@@ -1,30 +1,26 @@
 import React, {Component} from "react";
 import { connect } from "react-redux";
-import { simpleAction } from "./redux/actions/simpleAction";
+import { counterAction } from "./redux/actions/counterAction";
 import Header from "./components/Header/Header.styled";
 import "./App.css";
 
 const mapStateToProps = state => ({
-  ...state
+  counter: state.counterReducer.counter
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  simpleAction: () => dispatch(simpleAction())
+  counterAction: () => dispatch(counterAction())
 });
 
 class App extends Component {
 
-  simpleAction = () => {
-    this.props.simpleAction();
-  };
-
   render() {
-
+    console.log(this.props)
     return (
       <div className="App">
         Style Components Project
         <Header color="red" />
-        <button onClick={() => this.simpleAction()}>Test redux action</button>
+        <button onClick={() => this.props.counterAction()}>Test redux action</button>
         <pre>{JSON.stringify(this.props)}</pre>
       </div>
     );
