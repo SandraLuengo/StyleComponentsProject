@@ -15,13 +15,14 @@ const mapDispatchToProps = (dispatch) => ({
 class App extends Component {
 
   render() {
-    console.log(this.props)
+    const {counter} = this.props;
     return (
       <div className="App">
         Style Components Project
         <Header color="red" />
-        <button onClick={() => this.props.counterAction()}>Test redux action</button>
-        <pre>{JSON.stringify(this.props)}</pre>
+        <button onClick={() => this.props.counterAction()}>Increment Counter</button>
+        <p>{counter}</p>
+        
       </div>
     );
   }
