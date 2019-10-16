@@ -4,10 +4,10 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case "COUNTER_ACTION":
-      return {
-        counter: state.counter +1
-      };
+    case "INCREMENT_COUNTER_ACTION":
+      return {counter: state.counter +1};
+    case "DECREMENT_COUNTER_ACTION":
+      return {counter: state.counter-1};
     default:
       return state;
   }

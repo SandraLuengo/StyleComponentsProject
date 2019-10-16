@@ -1,6 +1,6 @@
-export const counterAction = () => dispatch => {
+export const incrementCounterAction = () => dispatch => {
   dispatch({
-    type: "COUNTER_ACTION",
+    type: "INCREMENT_COUNTER_ACTION",
   });
 };
 
