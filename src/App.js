@@ -7,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header color="#fabada" />
+        <Header color="#4492ae" />
+        
         <Counter/>
         <Gallery/>
       </div>

@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 import Counter from './Counter.component';
 
-const colors = ['blue','red','green','purple','pink','yellow','orange'];
+const colors = ['red','orange','yellow','green','blue','purple','violet'];
 
 export default styled(Counter).attrs({})`
 
+.exampleContainer {
+    background-color: #00968817;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
 .variantText {
-    color: ${({counter}) => counter%5 === 0 ? '#fabada' : '#949494' };
+    color: ${({counter}) => counter%5 === 0 ? '#ffb3cb' : '#949494' };
     transition: color .2s ease-in-out;
     font-size: 1.3em;
 }

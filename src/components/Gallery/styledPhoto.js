@@ -7,4 +7,6 @@ export const Photo = styled.img.attrs({
   width: ${({photos})=> `calc(100vw / ${photos} - 20px)`};
   height:20vh;
   margin: 10px 0;
+  filter: ${({id,actualPhoto})=> id===actualPhoto ? 'grayscale(0%)' : 'grayscale(60%)'};
+  transition: color .2s ease-in-out;
 `;
