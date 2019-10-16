@@ -8,7 +8,7 @@ const Counter = ({counter, incrementCounterAction, decrementCounterAction, class
         <button onClick={() => decrementCounterAction()}>Decrement Counter</button>
         <p className='counterNumber'>{counter}</p>
         <div className='variantText'>
-            {counter %5 === 0 ? 'El contador es multiplo de 5': 'El contador no es multiplo de 5'}
+            {counter %5 === 0 ? 'The counter is multipli of 5': 'The counter is not multipli of 5'}
         </div>
     </div>
     )

@@ -5,6 +5,9 @@ export default styled(Gallery).attrs({})`
   margin-top: 7vh;
   .photosContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    &:hover{
+        cursor: pointer;
+    }
   }
 `;
