@@ -1,5 +1,5 @@
 
-## 💅🏻Styled Component Basic Examples💅🏻
+## 💅🏻 Styled Component Basic Examples 💅🏻
 
 
 Brief guide on the use of the styled component accompanied by examples.
