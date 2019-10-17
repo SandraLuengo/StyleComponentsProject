@@ -12,7 +12,8 @@ export default styled(ComponentExplanation).attrs({})`
   .note {
       width:100%;
       background-color:#fff42996;
-      padding: 2% 1%;
+      padding: 2% 0%;
+      text-align: center;
 
       &__important {
           font-weight:bold;

@@ -44,6 +44,7 @@ const ReduxExplanation = ({className}) => {
                         Aqui aplicamos los estilos, css, sass ...
 
                     ';`
+                    
                     }
                 </code>
             </pre>
@@ -60,6 +61,7 @@ const ReduxExplanation = ({className}) => {
                     }
                     
                     export default Counter;
+
                     `}
                 </code>
             </pre>
@@ -88,6 +90,7 @@ const ReduxExplanation = ({className}) => {
                         mapStateToProps,
                         mapDispatchToProps
                     )(Component);
+
                     `}
                 </code>
             </pre>
@@ -106,6 +109,7 @@ const ReduxExplanation = ({className}) => {
                     
                     
                     export default connect(mapStateToProps)(styled(Instructions).attrs({})''
+
                     `}
                 </code>
             </pre>
