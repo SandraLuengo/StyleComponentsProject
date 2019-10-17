@@ -18,4 +18,4 @@ Brief guide on the use of the styled component accompanied by examples.
 
 ## Author
 
-Github: @SandraLuengo
+Github: [@SandraLuengo](https://github.com/SandraLuengo)
