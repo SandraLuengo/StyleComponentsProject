@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Photo} from './styledPhoto';
 import {HeaderPhotos} from './styledHeaderPhoto';
 import {Button} from '../commons/styledButton';
+import {StateExplanation} from '../../components'
 
 export default class Gallery extends Component {
     constructor(props){
@@ -29,7 +30,7 @@ export default class Gallery extends Component {
         const {photosLenght, actualPhoto} = this.state;
         return (
             <div className={className}>
-                <h2>Styled Component with Class State: Styled Component element</h2>
+                <StateExplanation/>
                 <div className='photosContainer'>
                     {photosLenght >= 0 && Array(photosLenght).fill().map((key,i) => {
                         return <HeaderPhotos id={i} actualPhoto={actualPhoto} key={`text${i}`} >Photo {i}</HeaderPhotos>
@@ -40,8 +41,8 @@ export default class Gallery extends Component {
                         return <Photo onClick={()=>this.setIndexPhoto(i)} id={i} actualPhoto={actualPhoto} key={`photo${i}`} photos={photosLenght}/>
                     })}
                 </div>
-                <Button onClick={() => this.incrementImg(photosLenght)} color={'red'}>New Image</Button>
-                <Button onClick={() => this.decrementImg(photosLenght)} color={'pink'}>Delete Image</Button>
+                <Button onClick={() => this.incrementImg(photosLenght)} color='#4c7370' font='white'>New Image</Button>
+                <Button onClick={() => this.decrementImg(photosLenght)} color='pink' font='white'>Delete Image</Button>
             </div>
         )
     }

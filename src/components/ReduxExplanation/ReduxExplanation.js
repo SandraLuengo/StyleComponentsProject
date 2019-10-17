@@ -109,7 +109,7 @@ const ReduxExplanation = ({className}) => {
                     `}
                 </code>
             </pre>
-            <h2>Ejemplo de cambio de estilos con redux</h2>
+            <h3>Ejemplo de cambio de estilos con redux</h3>
         </div>
     )
 }

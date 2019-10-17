@@ -6,4 +6,6 @@ export const Button = styled.button.attrs({})`
     padding:1%;
     margin:4px;
     border-radius:4px;
+    color: ${({font}) => font};
+    font-weight: bold;
 `;
