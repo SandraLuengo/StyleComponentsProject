@@ -13,6 +13,7 @@ export default connect(mapStateToProps)(styled(Instructions).attrs({})`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   .instructionsContainer {
     
   }
