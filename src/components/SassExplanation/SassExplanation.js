@@ -1,9 +1,24 @@
 import React from "react";
  const text = '${({ isMobile }) => isMobile && \n `background: blue;\ncolor: green;`'
+ const img = '${img}'
 
 const SassExplanation = ({ className }) => {
   return <div className={className}>
       <h2>Styled Component and SASS</h2>
+      <h3>Images as background-image</h3>
+      <p>Si queremos utilizar imagenes con background-image, tenemos que importar la imagen en una variable y utilizar esa variable en el css</p>
+      <pre>
+        <code>
+          {`
+            import img from '../../static/image/img'
+
+            / ... /
+
+
+            background-image = url(${img})
+          `}
+        </code>
+      </pre>
       <h3>isMobile</h3>
       <p>Con styled-component nos ahorramos el uso del paquete ClassNames, por lo que para poder usar la variable .isMobile de redux y añadir estilos para movil en nuestro componente hacemos lo siguiente:</p>
       <pre>

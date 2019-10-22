@@ -12,6 +12,3 @@ export default (state = initialState, action) => {
       return state;
   }
 };
-
-
-//Se hace un reducer por cada una de las acciones?? y se pone en cada uno de los reducer un initial State??
